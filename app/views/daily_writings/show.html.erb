@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @daily_writing.person %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @daily_writing.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @daily_writing.end_time %>
+</p>
+
+<p>
+  <strong>Words:</strong>
+  <%= @daily_writing.words %>
+</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @daily_writing.memo %>
+</p>
+
+<%= link_to 'Edit', edit_daily_writing_path(@daily_writing) %> |
+<%= link_to 'Back', daily_writings_path %>

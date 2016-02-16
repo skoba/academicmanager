@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      person: '利用者'
+    attributes:
+      person:
+        family: '姓'
+        given: '名'
+        given_ph: '(ふりがな）'
+        family_ph: '(ふりがな)'
+        given_e: '英文名'
+        family_e: '英文姓'
+        gender: '性別'
+        date_of_birth: '生年月日'
+        zip: '郵便番号'
+        address: '住所'
+        address_ph: '(ふりがな)'
+        phone: '電話番号'
+        email: 'email'

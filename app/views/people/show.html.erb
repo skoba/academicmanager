@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.family' %>:</strong>
+  <%= @person.family %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.given' %>:</strong>
+  <%= @person.given %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.family_ph' %>:</strong>
+  <%= @person.family_ph %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.given_ph' %>:</strong>
+  <%= @person.given_ph %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.family_e' %>:</strong>
+  <%= @person.family_e %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.given_e' %>:</strong>
+  <%= @person.given_e %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.gender' %>:</strong>
+  <%= @person.gender %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.date_of_birth' %>:</strong>
+  <%= @person.date_of_birth %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.zip' %>:</strong>
+  <%= @person.zip %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.address' %>:</strong>
+  <%= @person.address %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.address_ph' %>:</strong>
+  <%= @person.address_ph %>
+</p>
+
+<p>
+  <strong><%= t 'activerecord.attributes.person.phone' %>:</strong>
+  <%= @person.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @person.email %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
