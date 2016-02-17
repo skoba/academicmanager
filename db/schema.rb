@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160216180330) do
+ActiveRecord::Schema.define(version: 20160217023553) do
 
   create_table "daily_writings", force: :cascade do |t|
     t.integer  "person_id"
     t.datetime "start_time"
-    t.date     "end_time"
+    t.datetime "end_time"
     t.decimal  "words"
     t.text     "memo"
     t.datetime "created_at", null: false
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20160216180330) do
     t.string   "family_e"
     t.string   "gender"
     t.date     "date_of_birth"
-    t.string   "address"
     t.string   "zip"
+    t.string   "address"
     t.string   "address_ph"
     t.string   "phone"
     t.string   "email"

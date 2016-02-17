@@ -3,7 +3,7 @@ class CreateDailyWritings < ActiveRecord::Migration
     create_table :daily_writings do |t|
       t.references :person, index: true, foreign_key: true
       t.datetime :start_time
-      t.date :end_time
+      t.datetime :end_time
       t.decimal :words
       t.text :memo
 
