@@ -1,10 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Person, type: :model do
-  let (:person) { create :person }
+  it { is_expected.to have_many :daily_writings }
+
+  let (:person) { create :person }  
   subject { person }
 
-  it {is_expected.to be_valid }
+  it { is_expected.to be_valid }
 
   describe 'given name is mandatory' do
     before { person.given = nil }
