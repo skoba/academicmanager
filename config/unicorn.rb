@@ -9,4 +9,4 @@ pid '/home/skoba/src/academicmanager/tmp/pids/unicorn.pid'
 stderr_path '/home/skoba/src/academicmanager/log/unicorn.log'
 stdout_path '/home/skoba/src/academicmanager/log/unicorn.log'
 preload_app true
-listen 3333
+listen 3000

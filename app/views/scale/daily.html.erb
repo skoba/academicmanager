@@ -2,9 +2,13 @@
   <tr>
     <th>time</th><th>number</th><th>size</th>
   </tr>
+  <% @daily_records.each do |record| %>
   <tr>
-    <% @daily_records.each do |record| %>
       <td><%= record.t_measured %></td><td><%= record.f_number %></td><td><%= record.f_size %></td>
-    <% end %>
   </tr>
+  <% end %>
 </table>
+
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>draw_graph();</script>
