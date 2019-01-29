@@ -1,17 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To monitoring my daily jobs, such as writing codes and docs,
+I developed a tool for monitoring working directory.
 
-Things you may want to cover:
 
 * Ruby version
+Ruby 2.5.3
 
 * System dependencies
+Rails 5.2.x
 
 * Configuration
 
 * Database creation
+SQLITE3
 
 * Database initialization
 
@@ -20,9 +22,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

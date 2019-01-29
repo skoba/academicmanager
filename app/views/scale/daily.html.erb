@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <th>time</th><th>number</th><th>size</th>
+  </tr>
+  <tr>
+    <% @daily_records.each do |record| %>
+      <td><%= record.t_measured %></td><td><%= record.f_number %></td><td><%= record.f_size %></td>
+    <% end %>
+  </tr>
+</table>

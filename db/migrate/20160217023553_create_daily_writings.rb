@@ -1,4 +1,4 @@
-class CreateDailyWritings < ActiveRecord::Migration
+class CreateDailyWritings < ActiveRecord::Migration[5.2]
   def change
     create_table :daily_writings do |t|
       t.references :person, index: true, foreign_key: true

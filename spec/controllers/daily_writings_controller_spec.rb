@@ -53,7 +53,7 @@ RSpec.describe DailyWritingsController, type: :controller do
   end
 
   describe "GET #new" do
-    it "assigns a new daily_writing as @daily_writing" do
+    xit "assigns a new daily_writing as @daily_writing" do
       get :new, {}, valid_session
       expect(assigns(:daily_writing)).to be_a_new(DailyWriting)
     end

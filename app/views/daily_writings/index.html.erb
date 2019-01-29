@@ -1,34 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Daily Writings</h1>
+<h1>執筆作業記録</h1>
 
-<table>
+<div class="container">
+  <table class="table table-striped table-hover table-condensed">
   <thead>
     <tr>
-      <th>Person</th>
-      <th>Start time</th>
-      <th>End time</th>
-      <th>Words</th>
-      <th>Memo</th>
-      <th colspan="3"></th>
+      <th colspan="2" class="col-md-2" >研究者</th>
+      <th class="col-md-2">執筆開始時刻</th>
+      <th class="col-md-2">執筆終了時刻</th>
+      <th class="col-md-1">Words</th>
+      <th class="col-md-3">Memo</th>
+      <th class="col-md-1" colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @daily_writings.each do |daily_writing| %>
       <tr>
-        <td><%= daily_writing.person %></td>
-        <td><%= daily_writing.start_time %></td>
-        <td><%= daily_writing.end_time %></td>
-        <td><%= daily_writing.words %></td>
-        <td><%= daily_writing.memo %></td>
-        <td><%= link_to 'Show', daily_writing %></td>
-        <td><%= link_to 'Edit', edit_daily_writing_path(daily_writing) %></td>
-        <td><%= link_to 'Destroy', daily_writing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="col-xs-1"><%= daily_writing.person.family %></td>
+        <td class="col-xs-1"><%= daily_writing.person.given %></td>
+        <td class="col-xs-2"><%= daily_writing.start_time %></td>
+        <td class="col-xs-2"><%= daily_writing.end_time %></td>
+        <td class="col-xs-1"><%= daily_writing.words %></td>
+        <td class="col-xs-2"><%= daily_writing.memo %></td>
+        <td ><%= link_to 'Show', daily_writing %></td>
+        <td ><%= link_to 'Edit', edit_daily_writing_path(daily_writing) %></td>
+        <td ><%= link_to 'Destroy', daily_writing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table>  
+</div>
 
 <br>
 
